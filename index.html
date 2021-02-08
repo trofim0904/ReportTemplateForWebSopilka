@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style/nonstyle.css" />
+    <link rel="stylesheet" type="text/css" href="style/template.css"/>
+    <title>Lab1. Трофімчук, Анісімов ІА-72</title>
+</head>
+<body>
+    <header>
+        <p>ЗВІТИ З ЛАБОРАТОРНИХ РОБІТ</p>
+        <p>З ДИСЦИПЛІНИ "WEB-ТЕХНОЛОГІЇ"</p>
+        <p>Гр. ІА-72, Бригада №1: Трофімчук Дмитро, Анісімов Олександр</p>
+        <div class="labs-list container">
+            <ul>
+                <li class="active"><a href="#">Лабораторна робота №1</a></li>
+                <li><a href="#">Лабораторна робота №2</a></li>
+                <li><a href="#">Лабораторна робота №3</a></li>
+                <li><a href="#">Лабораторна робота №4</a></li>
+                <li><a href="#">Лабораторна робота №5</a></li>
+                <li><a href="#">Лабораторна робота №6</a></li>
+                <li><a href="#">Лабораторна робота №7</a></li>
+                <li><a href="#">Лабораторна робота №8</a></li>
+                <li><a href="#">Лабораторна робота №9</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="report-place container">
+            <div class="left-side">
+                <ul>
+                    <li><div id="btn_0" onclick="set_content(0)" class="left-button active-btn">
+                        <p>ПОСТАНОВКА ЗАДАЧІ</p>
+                        <p>Лабораторної роботи №1</p>
+                    </div></li>
+                    <li><div id="btn_1" onclick="set_content(1)" class="left-button">
+                        <p>Серидовище розробки</p>
+                        <p>Місце розташування сайту</p>
+                    </div></li>
+                    <li><div id="btn_2" onclick="set_content(2)" class="left-button">
+                        <p>Опис предметного середовища</p>
+                    </div></li>
+                    <li>
+                        <div class="falling-button">
+                            <p>ЗОВНІШНИЙ ВИГЛЯД САЙТУ</p>
+                            <p>HTML-Файли</p>
+                        </div>
+                        <div class="falling-list">
+                            <ul>
+                                <li><div id="btn_3" onclick="set_content(3)" class="small-left-button">
+                                    <p>HTML-код ТАБЛИЦЬ</p>
+                                </div></li>
+                                <li><div id="btn_4" onclick="set_content(4)" class="small-left-button">
+                                    <p>HTML-код ФОРМИ</p>
+                                </div></li>
+                                <li><div id="btn_5" onclick="set_content(5)" class="small-left-button">
+                                    <p>HTML-код ЗОБРАЖЕННЯ</p>
+                                </div></li>
+                                <li><div id="btn_6" onclick="set_content(6)" class="small-left-button">
+                                    <p>HTML-код ЗАГОЛОВКІВ</p>
+                                </div></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><div id="btn_7" onclick="set_content(7)" class="left-button">
+                        <p>ВИСНОВКИ</p>
+                    </div></li>
+                </ul>
+            </div>
+            <div class="right-side">
+                <div id="content_0" class="content active-content">1</div>
+                <div id="content_1" class="content">2</div>
+                <div id="content_2" class="content">3</div>
+                <div id="content_3" class="content">4</div>
+                <div id="content_4" class="content">5</div>
+                <div id="content_5" class="content">6</div>
+                <div id="content_6" class="content">7</div>
+                <div id="content_7" class="content">8</div>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="js/controlcontent.js"></script>
+</body>
+</html>

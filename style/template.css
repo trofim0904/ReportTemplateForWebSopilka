@@ -1,0 +1,91 @@
+header{
+    padding-bottom: 40px;
+    padding-top: 40px;
+    text-align: center;
+    font-size: bold;
+    font-size: 2.0em;
+}
+
+.container{
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.labs-list{
+    width: 100%;
+    padding-top: 40px;
+}
+.labs-list ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.labs-list ul li{
+    flex: 1 1 150px;
+    font-size: 0.6em;
+    /* max-width: 10%; */
+    border-bottom: 1px solid #30336b;
+    /* margin: 10px; */
+    padding: 10px;
+    
+}
+.labs-list ul li a{
+    color: black;
+    /* padding: 20px; */
+    /* padding: 20px; */
+    width: 100%;
+    text-align: center;
+}
+.labs-list ul li.active,
+.labs-list ul li:hover{
+    border-bottom: 4px solid #30336b;
+    padding-bottom: 8px;
+}
+
+.report-place{
+    width: 100%;
+    display: flex;
+}
+.report-place .left-side{
+    width: 25%;
+}
+.report-place .left-side ul{
+    padding: 10px;
+    
+}
+.report-place .left-side ul li{
+    margin-bottom: 10px;
+    font-size: 1.4em;
+}
+.report-place .left-side ul li .falling-list{
+    font-size: 0.6em;
+}
+.left-side .left-button{
+    padding-left: 10px;
+    cursor: pointer;
+}
+.left-side .falling-list .small-left-button{
+    padding-left: 10px;
+    cursor: pointer;
+}
+.left-side .left-button.active-btn,
+.left-side .left-button:hover,
+.left-side .falling-list .small-left-button.active-btn,
+.left-side .falling-list .small-left-button:hover{
+    border-left: 4px solid #30336b;
+}
+.report-place .right-side{
+    width: 75%;
+    font-size: 1.5em;
+    line-height: 30px;
+    padding: 10px;
+    background-color: #ecf0f1;
+}
+.report-place .right-side .content{
+    display: none;
+}
+.report-place .right-side .active-content{
+    display: block;
+}
