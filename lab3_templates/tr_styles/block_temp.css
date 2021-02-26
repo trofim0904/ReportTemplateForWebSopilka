@@ -1,0 +1,78 @@
+main{
+    width: 100%;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.top{
+    background: #f1c40f;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    vertical-align: middle;
+    border: 1px solid black;
+}
+.top .input-div{
+    width: 50%;
+    /* vertical-align: middle; */
+    position: relative;
+    
+}
+.top .input-div input{
+    background: #fff;
+    width: 80%;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    
+
+}
+.top .number{
+    width: 50%;
+    position: relative;
+}
+.top .number p{
+    
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.middle{
+    display: flex;
+    justify-content: space-between;
+}
+.middle .middle-element{
+    height: 60vh;
+    background: #e74c3c;
+    margin: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    width: 25%;
+    position: relative;
+}
+.middle .middle-element p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.bottom{
+    border: 1px solid black;
+    background: #f1c40f;
+    height: 10vh;
+    position: relative;
+}
+.bottom p{
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translate(-50%, -50%);
+}
