@@ -1,0 +1,34 @@
+tr.toprow td{
+    background-color: rgb(255, 204, 0);
+}
+td {
+    text-align: center;
+}
+td p {
+    font-size: larger;
+    font-weight: bold;
+}
+tr.thirdrow td:first-child{
+    background-color: whitesmoke;
+}
+
+tr.thirdrow td:nth-child(2) div{
+    background-color: rgb(51, 102, 255);
+}
+tr.bottomrow td{
+    background-color: rgb(255, 204, 0);
+}
+table.inside tr:first-child td{
+    background-color: rgb(255, 80, 80);
+}
+td.two{
+    background-color: rgb(51, 102, 255);
+}
+table.inside tr:nth-child(2) td:nth-child(2){
+    background-color: rgb(51, 102, 255);
+}
+input{
+    margin: 10px;
+    width: 60%;
+    height: 60%;
+}
