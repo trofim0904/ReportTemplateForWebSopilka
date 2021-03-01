@@ -2,6 +2,7 @@ let btns = [];
 let content = [];
 let count;
 document.body.onload = function(){
+  
     count = document.querySelectorAll("#left-btns li").length;
     // btns.push(document.getElementById('btn_1'));
     // alert( count );
