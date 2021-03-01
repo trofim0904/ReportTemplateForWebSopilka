@@ -30,13 +30,77 @@
     <main>
         <div class="report-place container">
             <div class="left-side">
-              
+                <ul id="left-btns">
+                    <li><div id="btn_0" onclick="set_content(0)" class="left-button active-btn">
+                        <p>Тема та мета</p>
+                        <p>Лабораторної роботи №3</p>
+                    </div></li>
+                    <li><div id="btn_1" onclick="set_content(1)" class="left-button">
+                        <p>Середовище риозробки. Шлях до файлів, створених у Лабі №3</p>
+                    </div></li>
+                    <li><div id="btn_2" onclick="set_content(2)" class="left-button">
+                        <p>Скріншот головної сторінки власного сайту</p>
+                    </div></li>
+                    <li><div id="btn_3" onclick="set_content(3)" class="left-button">
+                        <p>HTML-код власного сайту </p>
+                    </div></li>
+                    <li><div id="btn_4" onclick="set_content(4)" class="left-button">
+                        <p>CSS-код власного сайту</p>
+                    </div></li>
+                    <li><div id="btn_5" class="left-button">
+                        <a href="lab3_templates\tr_table_template.html" alt="" >Пункт 7 та FLEXBOX</a>
+                    </div></li>
+                    <li><div id="btn_6" onclick="set_content(6)" class="left-button">
+                        <p>Висновки</p>
+                    </div></li>
+                </ul>
             </div>
             <div class="right-side">
-              
+                <div id="content_0" class="content active-content">
+                    <h2>Тема: БЛОЧНА ВЕРСТКА HTML-ДОКУМЕНТУ ЗА МАКЕТОМ. ВЕРСТКА НА FLEXBOX.</h2>
+                    <br>
+                    <h3>Мета: придбати практичні навички роботи верстки сторінок засобами CSS, 
+                        верстки на основі плаваючих елементів, з’ясувати переваги та недоліки 
+                        типів макетів веб-сторінок
+                    </h3>
+                </div>
+                <div id="content_1" class="content">
+                    <h3>У якості IDE було обрано сучасний, потужний, зручний та красивий редактор тексту Visual Studio Code:</h3>                 
+                    <img src="Images/lab3/VSCode.png" alt="VSC" width="100%">
+                    <h3>Файлова структура сайту:</h3>                 
+                    <img src="Images/lab3/SiteFileStructure.png" alt="SFS" width="30%">
+                    <h3>Файлова структура звіту:</h3>                 
+                    <img src="Images/lab3/ZvitFileStructure.png" alt="Список" width="30%">
+                    
+                </div>
+                <div id="content_2" class="content">
+                    <h3>Головна сторінка сайту:</h3>                 
+                    <img src="Images/Main_page.png" alt="Список" width="100%">
+                </div>
+                <div id="content_3" class="content">
+                    <h3>HTML:</h3>                 
+                    <img src="Images/lab3/Html-code.png" alt="Головна сторінка" width="100%">
+                </div>
+                <div id="content_4" class="content">
+                    <h3>CSS:</h3>
+                    <img src="Images/lab3/Css-code.png" alt="(" width="100%">
+
+                </div>
+                <div id="content_5" class="content">
+                </div>
+                <div id="content_6" class="content">
+                    <h3>У даній роботі було розроблено наш сайт на основі png макета, що був намальований дизайнером. 
+                        Для реалізації макета було використано багато методів розміщення блоків. Серед них: flex, block, grid.
+                        Використовувалися різні типи позиціювання: position absolute та relative. Для фіксування розмірів, відстаней та відступів 
+                        використовувались міри: відсоток, пікселі та шрифтовий розмір. Другим етапом була верстка заданих макетів за варіантами за допомогою
+                        табличного та Flexbox підходів. Можна стверджувати, є не зручним та застарілим підхідходом. Наприклад при табличній верстці важко підлаштувати
+                        сайт для перегляду на екранах із різною роздільною здатністю.
+
+                    </h3>
+                </div>
             </div>
         </div>
     </main>
-    
+    <script type="text/javascript" src="js/controlcontent.js"></script>
 </body>
 </html>

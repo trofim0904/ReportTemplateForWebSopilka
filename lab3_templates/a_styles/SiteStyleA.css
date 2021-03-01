@@ -100,7 +100,7 @@ img{
     align-content: start
 }
 .block-dat {
-    width: 70%;
+    width: 60%;
     height: 100%;
     flex: 1 0 auto;
     margin: 2px;
@@ -111,15 +111,19 @@ img{
     padding-top: 11px;
 }
 .icon-dat {
-    width: 5%;
+    width: 4%;
     height: 100%;
     flex: 1 0 auto;
-    margin: 2px;
-    background-color: black;
-    display: grid;
-    place-items: center;
+    margin-left: 30px;
+    position: relative;
+    background: rgb(0, 0, 0);
 }
 .icon-dat img {
-    height:fit-content;
-
+    /* height:fit-content; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 75%;
+    width: auto;
 }

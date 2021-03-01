@@ -76,6 +76,9 @@ header{
 .left-side .falling-list .small-left-button:hover{
     border-left: 4px solid #30336b;
 }
+.left-button a {
+    color: black;
+}
 .report-place .right-side{
     width: 75%;
     font-size: 1.5em;
