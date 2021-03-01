@@ -5,8 +5,8 @@ td {
     text-align: center;
 }
 td p {
-    font-size: larger;
-    font-weight: bold;
+    font-size:x-large;
+    font-weight:bolder;
 }
 tr.thirdrow td:first-child{
     background-color: whitesmoke;
