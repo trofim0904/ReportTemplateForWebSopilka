@@ -30,13 +30,133 @@
     <main>
         <div class="report-place container">
             <div class="left-side">
+                <ul id="left-btns"> 
+                    <li><div id="btn_0" onclick="set_content(0)" class="left-button active-btn">
+                        <p>Постановка задачі</p>
+                        <p>Лабораторної роботи №4</p>
+                    </div></li>
+                    <li>
+                        <div id="btn_1" onclick="set_content(1)" class="left-button">
+                            <p>Способи функціонального</p>
+                            <p>Застосування JavaScript</p>
+                        </div>
+                        <div class="falling-list">
+                            <ul>
+                                <li><div id="btn_2" onclick="set_content(2)" class="small-left-button">
+                                    <p>Схема URL</p>
+                                </div></li>
+                                <li><div id="btn_3" onclick="set_content(3)" class="small-left-button">
+                                    <p>Обробник подій</p>
+                                </div></li>
+                                <li><div id="btn_4" onclick="set_content(4)" class="small-left-button">
+                                    <p>Підстановка (entity)</p>
+                                </div></li>
+                                <li><div id="btn_5" onclick="set_content(5)" class="small-left-button">
+                                    <p>Вставка(SCRIPT)</p>
+                                </div></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li><div id="btn_6" onclick="set_content(6)" class="left-button">
+                        <p>МАСИВИ(4 пункт)</p>
+                    </div></li>
+                    <li><div id="btn_7" onclick="set_content(7)" class="left-button">
+                        <p>Виконання 6 пункту</p>
+                    </div></li>
+                    <li><div id="btn_8" onclick="set_content(8)" class="left-button">
+                        <p>ВИСНОВКИ</p>
+                    </div></li>
+                </ul>
               
             </div>
             <div class="right-side">
-              
+                <div id="content_0" class="content active-content">
+                    <p><strong>Тема:</strong>  ФУНКЦІОНАЛЬНЕ ЗАСТОСУВАННЯ JAVASCRIPT У HTML-ДОКУМЕНТІ. 
+                        КЛАСИ,ОБ’ЄКТИ, ФУНКЦІЇ,  В МОВІ JAVASCRIPT. ПОДІЇ ТА ОБРОБКА ПОДІЙ.
+                        ПРОГРАМНА ВЗАЄМОДІЯ З HTML ДОКУМЕНТАМИ НА ОСНОВІ DOM АРІ
+                    </p>
+                    <br>
+                    <p>
+                        <strong>Мета:</strong> придбати практичні навички роботи маніпулювання інформаційним вмістом Web-документа засобами мови JavasSript, використання об’єктів,масивів, функцій, подій, обробників подій у сценаріях на мові JavasSript
+                    </p>
+                    <br>
+                    <p style="text-align: center;"><strong>ХІД ВИКОНАННЯ РОБОТИ</strong></p>
+                    <br>
+                    <ul style="list-style:decimal; margin-left: 20px;">
+                        <li style="list-style:decimal;">У звітному HTML-документі розмістити  тему та  постановку задачі лабораторної роботи №4.</li>
+                        <li style="list-style:decimal;">У власному сайті або на окремій WEB-сторінці, використовучі функції , застосувати  4 способи функціонального застосування JavaScript:
+                            гіпертекстове посилання (схема URL);
+                            обробник події (handler);
+                            підстановка (entity);
+                            вставка (тег SCRIPT).
+                            </li>
+                        <li style="list-style:decimal;">Розмістити результати виконання  та програмний код 2 пункту у звітному HTML-документі, записавши назви файлів HTML-документів.</li>
+                        <li style="list-style:decimal;">Використовуючі сценарій на JavaScript, виконати завдання. </li>
+                        <li style="list-style:decimal;">Розмістити результат виконання  та програмний код 4 пункту у звітному HTML-документі.</li>
+                        <li style="list-style:decimal;">Забезпечити виконання завдання згідно із варіантом, сформувати необхідні дані, вбудовані у програму, у вигляді масивів, виконати тестування програми.</li>
+                        <li style="list-style:decimal;">Розмістити результат виконання  та програмний код 6 пункту у звітному HTML-документі.</li>
+                        <li style="list-style:decimal;">У власному сайті на свій розсуд застосувати сценарії на JavaScript. Продемонструвати викладачу та відобразити у звітному HTML-документі.</li>
+                        <li style="list-style:decimal;">У звітному HTML-документі оформити звіт лабораторної роблти №4 </li>
+                    </ul>
+                </div>
+                <div id="content_1" class="content"><p>Для виконання завдання поставленого у даній роботі необхідно застосувати 4 способи застосування JS. Кожен із даних способів використовується на нашому сайті. Результати можно перевірити перейшовши на нижні підпункти.</p></div>
+                <div id="content_2" class="content">
+                    <p>Для виконання даного завдання був змінений тег 'a'. При натисканні на посилання з'являється форма із запитанням чи необхідно виконати перехід на сторінку замовлення столику.</p>
+                    <br>
+                    <p><strong>Код:</strong></p>
+                    <br>
+                    <img src="Images/lab4/img_url_code.png" style="width: 100%;">
+                    <br>
+                    <p><strong>Результат:</strong></p>
+                    <br>
+                    <img src="Images/lab4/img_url_result.png" style="width: 100%;">
+                </div>
+
+                <div id="content_3" class="content">
+                    <p>В даному пункті використовуємо подію натиску на кнопку. У результаті буде змінюватись меню</p>
+                    <br>
+                    <p><strong>Код HTML:</strong></p>
+                    <br>
+                    <img src="Images/lab4/img_event_html.png" style="width: 100%;">
+                    <br>
+                    <p><strong>Код JS:</strong></p>
+                    <br>
+                    <img src="Images/lab4/img_event_js.png" style="width: 100%;">
+                    <br>
+                    <p><strong>Результат 1:</strong></p>
+                    <br>
+                    <img src="Images/lab4/img_event_res1.png" style="width: 100%;">
+                    <br>
+                    <p><strong>Результат 2:</strong></p>
+                    <br>
+                    <img src="Images/lab4/img_event_res2.png" style="width: 100%;">
+
+                </div>
+                <div id="content_4" class="content">5</div>
+                <div id="content_5" class="content">
+                    <p>Для виконання буде продемонстровано використання вставки скрипта у форматі файлу.</p>
+                    <br>
+                    <p><strong>Код HTML:</strong></p>
+                    <br>
+                    <img src="Images/lab4/img_file_html.png" style="width: 100%;">
+                    <br>
+                    <p><strong>Код JS:</strong></p>
+                    <br>
+                    <img src="Images/lab4/img_file_js.png" style="width: 100%;">
+                    <br>
+                    <p><strong>Результат:</strong></p>
+                    <br>
+                    <img src="Images/lab4/img_file_result.png" style="width: 100%;">
+                    <br>
+                    
+                </div>
+                <div id="content_6" class="content">7</div>
+                <div id="content_7" class="content">8</div>
+                <div id="content_8" class="content">9</div>
+                    
             </div>
         </div>
     </main>
-    
+    <script type="text/javascript" src="js/controlcontent.js"></script>
 </body>
 </html>
