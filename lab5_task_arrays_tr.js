@@ -52,7 +52,7 @@ function Sort(elements){
     for (let i = 0, l = elements.length, k = l - 1; i < k; i++) {
         let indexMax = i;
         for (let j = i + 1; j < l; j++) {
-            if (elements[indexMax] > elements[j]) {
+            if (+elements[indexMax] < +elements[j]) {
                 indexMax = j;
             }
         }
