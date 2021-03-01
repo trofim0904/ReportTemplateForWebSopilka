@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+.first-block{
+    background: rgb(48, 48, 48);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.0em;
+}
+.second-block{
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.second-block .second-block-element{
+    background: rgb(48, 48, 48);
+    padding: 20px;
+    
+}
+.third-block-content-element-inf{
+    display: flex;
+}
+.second-block-element img{
+    width: 90px;
+    height: 90px;
+}
+.second-block .second-block-element p{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Montserrat', sans-serif;
+    /* font-size: 1.0em; */
+    font-weight: bold;
+    margin-top: 20px;
+}
+/* ///////////////////////////////////////// */
+
+.third-block{
+    background: rgb(41, 41, 41);
+    color: #fff;
+    margin-top: 35px;
+    padding-top: 40px;
+  
+}
+.third-block-title-first{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    letter-spacing: 3px;
+    font-family: 'Montserrat', sans-serif;
+}
+.third-block-title-second{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8em;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(50, 152, 252);
+}
+.third-block-content{
+    display: flex;
+    justify-content:space-evenly;
+    margin-top: 20px;
+}
+.third-block-content-element img{
+    margin-top: -80px;
+
+}
+.third-block-content-element{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    flex: 1 1 100px;
+}
+.third-block-content-element-content{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.third-block-content-element-content-title{
+    color: rgb(255, 150, 56);
+    letter-spacing: 3px;
+    font-size: 1.4em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: lighter;
+    
+}
+.third-block-content-element-content-text{
+    font-size: 1.0em;
+}
+
+/* ///////////////////////////////////////////////////////////////////// */
+.fourth-block{
+    padding-top: 30px;
+    position: relative;
+    padding-bottom: 30px;
+}
+.fourth-block-first-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+    letter-spacing: 3px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(255, 150, 56);
+}
+.fourth-block-second-title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.0em;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.fourth-block-content{
+    margin-top: 40px;
+    display: flex;
+    justify-content:space-around;
+
+}
+.fourth-block-content-element{
+    width: 50%;
+}
+.fourth-block-content-element img{
+    margin-left: 20px;
+}
+.fourth-block-content-element ul li{
+    padding-left: 1.3em;
+    margin-bottom: 30px;
+}
+.fourth-block-content-element ul li::before{
+    background-image: url('../tr_img/icon_third_block.png');
+    background-size: cover;
+    display: inline-block;
+    margin-left: -2.3em;
+    margin-bottom: -1.3em;
+    width: 1.1em; 
+    height: 1.1em;
+    padding: 1%;
+    content:"";
+}
+.fourth-block-content-element-title{
+    font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: 15px;
+}
+.fourth-block-content-element-text{
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+}
+.fourth-block-java{
+    position: absolute;
+    top: 22%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    color: rgb(237, 244, 251);
+    font-size: 12.0em;
+    font-weight: 1000;
+    font-family: 'Montserrat', sans-serif;
+    z-index: -1;
+}
+/* /////////////////////////////////////////////////// */
+footer{
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-element{
+    background: rgb(0, 0, 0);
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+   
+}
+.footer-element p{
+    padding: 20px;
+    padding-left: 5px;
+}
+.footer-element-img{
+    position: relative;
+    background: rgb(0, 0, 0);
+    width: 5%;
+}
+.footer-element-img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
