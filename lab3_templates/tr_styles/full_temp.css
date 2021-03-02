@@ -12,13 +12,16 @@
 }
 .second-block{
     margin-top: 35px;
+    
     display: flex;
     justify-content: space-between;
-    
+    flex-wrap: wrap;
 }
 .second-block .second-block-element{
+    flex: 0 1 50px;
     background: rgb(48, 48, 48);
     padding: 20px;
+    margin-bottom: 10px;
     
 }
 .third-block-content-element-inf{
