@@ -8,18 +8,18 @@ function getResult(){
     }
     
     result +='\nМаксимальне число серед парних номерів: ';
-    result +=GetMax(GetOddEvenArrays(elements).odd);
+    result +=AGetMax(GetOddEvenArrays(elements).odd);
     result +='\nМаксимальне число серед непарних номерів: ';
-    result +=GetMax(GetOddEvenArrays(elements).even);
+    result +=AGetMax(GetOddEvenArrays(elements).even);
 
     result +='\nМінімальне число серед парних номерів: ';
-    result +=GetMin(GetOddEvenArrays(elements).odd);
+    result +=AGetMin(GetOddEvenArrays(elements).odd);
     result +='\nМінімальне число серед парних номерів: ';
-    result +=GetMin(GetOddEvenArrays(elements).even);
+    result +=AGetMin(GetOddEvenArrays(elements).even);
     
 
     result +='\nСортування: ';
-    let sortArray = Sort(elements);
+    let sortArray = ASort(elements);
     for (let i = 0; i < sortArray.length; i++) {
         result += sortArray[i] + ' ';
     }
@@ -27,13 +27,13 @@ function getResult(){
     document.getElementById('tr-result').value = result;
 }
 
-function GetMax(elements){
+function AGetMax(elements){
     return(Math.max.apply(Math, elements));  
 }
-function GetMin(elements){
+function AGetMin(elements){
     return(Math.min.apply(Math, elements));  
 }
-function GetOddEvenArrays(elements){
+function AGetOddEvenArrays(elements){
     let oddArray=[];
     let evenArray=[];
     for (let i = 0; i < elements.length; i++) {
@@ -48,11 +48,11 @@ function GetOddEvenArrays(elements){
         even: evenArray,
     };
 }
-function Sort(elements){
+function ASort(elements){
     for (let i = 0, l = elements.length, k = l - 1; i < k; i++) {
         let indexMax = i;
         for (let j = i + 1; j < l; j++) {
-            if (+elements[indexMax] < +elements[j]) {
+            if (Number(elements[indexMax]) < Number(elements[j])) {
                 indexMax = j;
             }
         }

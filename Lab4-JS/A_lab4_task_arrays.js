@@ -1,39 +1,68 @@
-function GetResult(){
-    let placeholderValue = document.getElementById('tr-array-elements').value;
+function AgetResult(){
+    let placeholderValue = document.getElementById('A-array-elements').value;
     let result='Вхідні: ';
     let elements = placeholderValue.split(' ');
     
     for (let i = 0; i < elements.length; i++) {
         result += elements[i] + ' ';
     }
-    
-    result +='\nМаксимальне число серед парних номерів: ';
-    result +=GetMax(GetOddEvenArrays(elements).odd);
-    result +='\nМаксимальне число серед непарних номерів: ';
-    result +=GetMax(GetOddEvenArrays(elements).even);
+    result +='\nСума елементів із парними індексами: ';
+    result +=AGetSumm(AGetOddEvenArrays(elements).odd);
+    result +='\nДобуток від\'ємних елементів: ';
+    result +=ANegativeProduct(elements);
 
-    result +='\nМінімальне число серед парних номерів: ';
-    result +=GetMin(GetOddEvenArrays(elements).odd);
-    result +='\nМінімальне число серед парних номерів: ';
-    result +=GetMin(GetOddEvenArrays(elements).even);
+    result +='\nмаксимальний елемент серед додатних чисел: ';
+    result +=AGetMaxPositive(elements).Value;
+    result +='\nІндекс максимального елемента серед додатних чисел: ';
+    result +=AGetMaxPositive(elements).Id;
     
 
     result +='\nСортування: ';
-    let sortArray = Sort(elements);
+    let sortArray = ASort(elements);
     for (let i = 0; i < sortArray.length; i++) {
         result += sortArray[i] + ' ';
     }
 
-    document.getElementById('tr-result').value = result;
+    document.getElementById('A-result').value = result;
 }
 
-function GetMax(elements){
+function AGetSumm(elements){
+    let Summ=0;
+    for(let i = 0; i < elements.length; i++){
+        Summ += +elements[i];
+    }
+    return(Summ);  
+}
+function ANegativeProduct(elements){
+    let Prod=1;
+    for(let i = 0; i < elements.length; i++){
+        if(elements[i]<0){
+            Prod *= elements[i];
+        }
+    }
+    return(Prod);  
+}
+function AGetMaxPositive(elements){
+    let MaxPos = 0;
+    let id = 0;
+    for(let i = 0; i < elements.length; i++){
+        if(+elements[i] > +MaxPos){
+            MaxPos = +elements[i];
+            id = i;
+        }
+    }
+    return{
+        Value: MaxPos,
+        Id: id,
+    };  
+}
+function AGetMax(elements){
     return(Math.max.apply(Math, elements));  
 }
-function GetMin(elements){
+function AGetMin(elements){
     return(Math.min.apply(Math, elements));  
 }
-function GetOddEvenArrays(elements){
+function AGetOddEvenArrays(elements){
     let oddArray=[];
     let evenArray=[];
     for (let i = 0; i < elements.length; i++) {
@@ -48,7 +77,7 @@ function GetOddEvenArrays(elements){
         even: evenArray,
     };
 }
-function Sort(elements){
+function ASort(elements){
     for (let i = 0, l = elements.length, k = l - 1; i < k; i++) {
         let indexMax = i;
         for (let j = i + 1; j < l; j++) {
