@@ -8,16 +8,6 @@ function getResult(){
     }
     
     result +='\nМаксимальне число серед парних номерів: ';
-<<<<<<< HEAD
-    result +=GetMax(GetOddEvenArrays(elements).odd);
-    result +='\nМаксимальне число серед непарних номерів: ';
-    result +=GetMax(GetOddEvenArrays(elements).even);
-
-    result +='\nМінімальне число серед парних номерів: ';
-    result +=GetMin(GetOddEvenArrays(elements).odd);
-    result +='\nМінімальне число серед парних номерів: ';
-    result +=GetMin(GetOddEvenArrays(elements).even);
-=======
     result +=GetMax(GetOddEvenArrays(elements).even);
     result +='\nМаксимальне число серед непарних номерів: ';
     result +=GetMax(GetOddEvenArrays(elements).odd);
@@ -26,7 +16,6 @@ function getResult(){
     result +=GetMin(GetOddEvenArrays(elements).even);
     result +='\nМінімальне число серед парних номерів: ';
     result +=GetMin(GetOddEvenArrays(elements).odd);
->>>>>>> 2e71230d9e809cda7efcf7cd302b7e62dc70a1a8
     
 
     result +='\nСортування: ';

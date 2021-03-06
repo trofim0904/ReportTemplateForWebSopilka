@@ -44,7 +44,8 @@
 .cont-onform{
     border: 1px solid black;
     margin-bottom: 10px;
-    flex: 0 1 200px
+    flex: 0 1 200px;
+    /* flex: 0 1 150px; */
 }
 .number-circle{
     border: 1px solid rgb(255, 189, 89);
