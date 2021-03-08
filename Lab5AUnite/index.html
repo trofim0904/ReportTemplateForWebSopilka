@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Відеогалерея</title>
+
+	<script type='text/javascript' src='unitegallery/js/jquery-11.0.min.js'></script>	
+	<script type='text/javascript' src='unitegallery/js/unitegallery.min.js'></script>	
+
+	<link rel='stylesheet' href='unitegallery/css/unite-gallery.css' type='text/css' />
+	
+	<script type='text/javascript' src='unitegallery/themes/video/ug-theme-video.js'></script>
+	<link rel='stylesheet' href='unitegallery/themes/video/skin-right-thumb.css' type='text/css' />
+	
+	
+</head>
+
+<body>
+	
+	<h2>Приклад відеогалереї за допомогою United Galerry</h2>
+	
+	<div id="gallery" style="display:none;">
+	
+			<div data-type="youtube"
+				 data-title="25 millions orbeez"
+				 data-description="25 millions orbeez"
+				 data-thumb="https://i.ytimg.com/vi/MFVXsnq230c/mqdefault.jpg"
+				 data-image="https://i.ytimg.com/vi/MFVXsnq230c/sddefault.jpg"
+			     data-videoid="MFVXsnq230c" ></div>
+
+			
+			<div data-type="youtube"
+				 data-title="Cats"
+				 data-description="Funny cats"
+				 data-thumb="https://i.ytimg.com/vi/EJS4hYNngto/mqdefault.jpg"
+				 data-image="https://i.ytimg.com/vi/EJS4hYNngto/sddefault.jpg"
+			     data-videoid="EJS4hYNngto" ></div>
+
+			
+			<div data-type="youtube"
+				 data-title="Sus"
+				 data-description="Cliff Slip and Slide description"
+				 data-thumb="https://i.ytimg.com/vi/_PPeUamwaw0/mqdefault.jpg"
+				 data-image="https://i.ytimg.com/vi/_PPeUamwaw0/sddefault.jpg"
+			     data-videoid="_PPeUamwaw0" ></div>
+
+			
+			<div data-type="youtube"
+				 data-title="Epic Hot Air Balloon Rope Swing"
+				 data-description="Epic Hot Air Balloon Rope description"
+				 data-thumb="https://i.ytimg.com/vi/KEoXn34ilKY/mqdefault.jpg"
+				 data-image="https://i.ytimg.com/vi/KEoXn34ilKY/sddefault.jpg"
+			     data-videoid="eX2qFMC8cFo" ></div>
+
+			
+			<div data-type="youtube"
+				 data-title="BMX Rodeo at 1000 FPS"
+				 data-description="BMX Rodeo at 1000 FPS description"
+				 data-thumb="https://i.ytimg.com/vi/rUi3X3G63dg/mqdefault.jpg"
+				 data-image="https://i.ytimg.com/vi/rUi3X3G63dg/sddefault.jpg"
+			     data-videoid="rUi3X3G63dg" ></div>	 
+	</div>
+	
+	<script type="text/javascript">
+
+		jQuery(document).ready(function(){
+
+			jQuery("#gallery").unitegallery();
+
+		});
+		
+	</script>
+
+
+</body>
+</html>

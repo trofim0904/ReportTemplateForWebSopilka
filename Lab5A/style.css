@@ -1,0 +1,66 @@
+@font-face {
+   font-family: 'BebasNeueRegular';
+   src: url('fonts/BebasNeue-webfont.eot');
+   src: url('fonts/BebasNeue-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/BebasNeue-webfont.woff') format('woff'),
+        url('fonts/BebasNeue-webfont.ttf') format('truetype'),
+        url('fonts/BebasNeue-webfont.svg#BebasNeueRegular') format('svg');
+   font-weight: normal;
+   font-style: normal;
+
+}
+
+.container {
+   width: 90%; 
+   margin: 0; 
+   overflow: none;
+}
+
+.clock {
+   width:50%; 
+   margin:0;
+   margin-left: 25%;
+   padding:30px; 
+   border:1px solid #333; 
+   color:#fff; 
+}
+
+#Date { 
+   font-family:'BebasNeueRegular', Arial, Helvetica, sans-serif; 
+   font-size:36px; 
+   text-align:center; 
+   text-shadow:0 0 5px #00c6ff; 
+}
+
+.clock ul { 
+   width:100%; 
+   margin:0; 
+   padding:0px; 
+   list-style:none; 
+   text-align:center; 
+}
+
+.clock ul li { 
+   display:inline; 
+   font-size:5em; 
+   text-align:center; 
+   text-decoration:none; 
+   color:#00c6ff;
+   font-family:'BebasNeueRegular', Arial, Helvetica, sans-serif; 
+   text-shadow:0 0 5px #00c6ff; 
+}
+
+#point { 
+   position:relative;  
+   padding-left:10px; 
+   padding-right:10px; 
+}
+
+.covervid-wrapper {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
