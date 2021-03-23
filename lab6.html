@@ -30,13 +30,100 @@
     <main>
         <div class="report-place container">
             <div class="left-side">
-              
+                <ul id="left-btns">
+                    <li><div id="btn_0" onclick="set_content(0)" class="left-button active-btn">
+                        <p>Тема та мета</p>
+                        <p>Лабораторної роботи №6</p>
+                    </div></li>
+                    <li><div id="btn_1" onclick="set_content(1)" class="left-button">
+                        <p>Динамічні елементи на Jquery</p>
+                    </div></li>
+                    <li><div id="btn_2" onclick="set_content(2)" class="left-button">
+                        <p>Створення WEB-вузла на комп'ютері</p>
+                    </div></li>
+                    <li><div id="btn_3" onclick="set_content(3)" class="left-button">
+                        <p>Завантаження документів на сервер</p>
+                    </div></li>
+                    <li><div id="btn_4" onclick="set_content(4)" class="left-button">
+                        <p>Зміна розширення із .html на .php </p>
+                    </div></li>
+                    <li><div id="btn_5" onclick="set_content(5)" class="left-button">
+                        <p>Налаштування сервера </p>
+                    </div></li>
+                    <li><div id="btn_6" onclick="set_content(6)" class="left-button">
+                        <p>Форма зворотнього зв'язку</p>
+                    </div></li>
+                    <li><div id="btn_7" onclick="set_content(7)" class="left-button">
+                        <p>Висновки</p>
+                    </div></li>
+                </ul>
             </div>
             <div class="right-side">
-              
+                <div id="content_0" class="content active-content">
+                    <h2>Тема WEB-СЕРВЕРИ ТА ПРИНЦИПИ ЇХ РОБОТИ З КОРИСТУВАЧЕМ. 
+                        НАЛАШТУВАННЯ WEB-СЕРВЕРУ. СЕРВЕРНІ WEB-ЗАСТОСУВАННЯ.
+                        </h2>
+                    <br>
+                    <h3>Мета: придбати практичні навички встановлення та конфігурування WEB-сервера, встановлення та налаштування OpenServer
+                    </h3>
+                </div>
+                <div id="content_1" class="content">
+                    <h3>Даний пункт було виконано у минулій ЛР.<br></h3>
+                    <a href="lab5.html" alt="" >Посилання тут</a>
+                    
+                </div>
+                <div id="content_2" class="content">
+                    <h3>В якості емулятора сервера на комп'ютері було обрано Open Server. Це просте, потужне та сучасне середовище для розгортання ВЕБ-додатку на локальній машині.<br></h3>
+                    <h3>Запустимо Open Server Panel:</h3>                 
+                    <img src="Images/lab6/OpenPanel.png" alt="VSC" width="100%">
+                    <h3>
+                        Запускаємо сервер:
+                    </h3>
+                    <img src="Images/Lab6/OpenPanel2.png" alt="Server"width="50%" >
+                    <h3>Сервер працює.</h3>
+                    
+                </div>
+                <div id="content_3" class="content">
+                    <h3>Завантажимо наш сайт на сервер:</h3>                 
+                    <img src="Images/Lab6/WebDir.png" alt="Список" width="70%">
+                    <h3>Дана зміна відобразилась на сервері:</h3>                 
+                    <img src="Images/Lab6/OpenPanel3.png" alt="Список" width="50%">
+                </div>
+                <div id="content_4" class="content">
+                    <h3>Перепишемо назви файлів в проєкті із html на php</h3>                 
+                    <img src="Images/lab6/Dir.png " alt="Головна сторінка" width="100%">
+                    <h3>Бачимо, що все працює коректно
+                    </h3>                 
+                    <img src="Images/lab6/DirEx.png " alt="Головна сторінка" width="100%">
+                </div>
+                <div id="content_5" class="content">
+                    <h3>Застосовано наступні налаштування сервера:
+
+                    </h3>
+                    <img src="Images/lab6/SSettings.png" alt="(" width="100%">
+                    <img src="Images/lab6/SSettings2.png" alt="(" width="100%">
+                </div>
+                <div id="content_6" class="content">
+                    <h3>Html код</h3>                 
+                    <img src="Images/lab6/FormHtml.png " alt="Головна сторінка" width="100%">
+                    <h3>Php код
+                    </h3>                 
+                    <img src="Images/lab6/FormPhp1.png " alt="Головна сторінка" width="40%">
+                    <img src="Images/lab6/FormPhp2.png " alt="Головна сторінка" width="100%">
+                    <h3>Приклад роботи із некоректними даними</h3>
+                    <img src="Images/lab6/FormFalse.png " alt="Головна сторінка" width="100%">
+                    <h3>Приклад роботи із коректними даними</h3>
+                    <img src="Images/lab6/FormTrue.png " alt="Головна сторінка" width="100%">
+                </div>
+                <div id="content_7" class="content">
+                    <h3>У даній роботі був встановлений та завантажаний локальний сервер. Проєкт було перероблено під мову php та розгорнуто на Open Server. Розгортання проєкту на сервері дає змогу використовувати модулі php. Дані модулі отримують
+                        обробляють на стороні сервера, та надсилають запити по протоколу http. Було використано даний підхід на прикладі форми резервування столика.
+
+                    </h3>
+                </div>
             </div>
         </div>
     </main>
-    
+    <script type="text/javascript" src="js/controlcontent.js"></script>
 </body>
 </html>
